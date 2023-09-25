@@ -1,19 +1,33 @@
 {
-  "name": "myportfolio",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
   "dependencies": {
-    "autoprefixer": "10.4.15",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/lab": "^5.0.0-alpha.142",
+    "@mui/material": "^5.14.9",
+    "framer-motion": "^10.16.2",
     "next": "13.4.19",
-    "postcss": "8.4.29",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "react-scroll": "^1.8.9",
+    "typewriter-effect": "^2.20.1"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^13.5.1",
+    "autoprefixer": "10.4.15",
+    "eslint": "^8.49.0",
+    "postcss": "8.4.29",
+    "sharp": "^0.32.5",
+    "standard": "^17.1.0",
     "tailwindcss": "3.3.3"
-  }
+  },
+  "name": "myportfolio",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "version": "1.5.0"
 }

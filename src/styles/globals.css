@@ -2,26 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 80px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #222a35;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #575c66;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #626970;
+}
+
+@layer base {
+  .wrapper {
+    @apply [background:linear-gradient(_38.73deg,rgba(204,0,187,0.15)_0%,rgba(201,32,184,0)_50%_),linear-gradient(_141.27deg,rgba(0,70,209,0)_50%,rgba(0,70,209,0.15)_100%_)] w-full [clip-path:polygon(0_0,100%_0,100%_100%,30%_98.5%,0_100%)];
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .resumeBtn {
+    @apply [-webkit-appearance:button] [-moz-appearance:button] [appearance:button] no-underline w-[95%] max-w-[300px] text-center text-white cursor-pointer text-xl font-semibold transition-all duration-[0.2s] ease-[ease-in-out] [background:hsla(271,100%,50%,1)] [background:linear-gradient(225deg,hsla(271,100%,50%,1)_0%,hsla(294,100%,50%,1)_100%)] [background:-moz-linear-gradient(225deg,hsla(271,100%,50%,1)_0%,hsla(294,100%,50%,1)_100%)] [background:-webkit-linear-gradient(225deg,hsla(271,100%,50%,1)_0%,hsla(294,100%,50%,1)_100%)] dark:[background:rgb(2,177,233)] dark:[background:linear-gradient(270deg,rgba(2,177,233,1)_69%,rgba(1,184,237,1)_77%,rgba(1,190,241,1)_84%,rgba(1,198,246,1)_90%,rgba(0,212,255,1)_97%)] shadow-[10px_10px_0px_#1F2634,-10px_-10px_0px_#1F2634] px-0 py-4 rounded-[20px] hover:transition-all hover:duration-[0.4s] hover:ease-[ease-in-out] hover:shadow-[20px_20px_60px_#1F2634,] hover:brightness-100 hover:scale-105;
+  }
+
+  .card {
+    @apply w-[650px] rounded-[10px] hover:shadow-[0px_0px_20px_rgba(0,0,0,0.2)] px-4 py-3 justify-between relative overflow-hidden flex flex-col gap-3 transition-all duration-[0.3s] ease-[ease-in-out] border-[0.1px] border-solid dark:border-primaryDark border-primary shadow-[rgba(23,92,230,0.15)_0px_4px_24px] hover:translate-y-[-5px] md:gap-2 md:p-2.5 md:w-[560px] sm:w-[300px];
+  }
 }
