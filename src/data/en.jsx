@@ -286,5 +286,18 @@ export const projects = [
     category: 'web app',
     github: 'https://github.com/CrissACM/Store-With-Cars-simple',
     webapp: 'https://store-simple.vercel.app/'
+  },
+  {
+    id: 4,
+    title: 'Pomodoro',
+    date: 'feb 2023',
+    description:
+      'The Pomodoro mobile app, built with Expo and React Native, offers an efficient time management tool. Users can break their work into time intervals called \'Pomodoro\', followed by short breaks, enhancing productivity and focus. The app features an intuitive interface, customizable notifications, and task completion tracking. It\'s an effective mobile solution for time management and productivity improvement on the go.',
+    image:
+      '/images/projects/pomodoro.webp',
+    tags: ['JavaScript', 'React Native', 'Expo CLI'],
+    category: 'mobile app',
+    github: 'https://github.com/CrissACM/pomodoro',
+    webapp: 'https://pomodoro-three-mauve.vercel.app/'
   }
 ]

@@ -38,6 +38,27 @@ function Projects ({ openModal, setOpenModal }) {
               </div>
               )}
           <div className='w-[1.5px] bg-primary dark:bg-primaryDark' />
+          {toggle === 'vanilla'
+            ? (
+              <div
+                active='true'
+                value='vanilla'
+                onClick={() => setToggle('vanilla')}
+                className='px-[18px] py-2 cursor-pointer md:px-2 md:py-1.5 bg-primary/30 dark:bg-primaryDark/20 hover:bg-primary/40 dark:hover:bg-primaryDark/10'
+              >
+                VANILLA
+              </div>
+              )
+            : (
+              <div
+                value='vanilla'
+                onClick={() => setToggle('vanilla')}
+                className='px-[18px] py-2 cursor-pointer  md:rounded md:px-2 md:py-1.5 active:bg-primary/20 dark:active:bg-primaryDark/20 hover:bg-primary/30 dark:hover:bg-primaryDark/10'
+              >
+                VANILLA
+              </div>
+              )}
+          <div className='w-[1.5px] bg-primary dark:bg-primaryDark' />
           {toggle === 'web app'
             ? (
               <div
@@ -46,7 +67,7 @@ function Projects ({ openModal, setOpenModal }) {
                 onClick={() => setToggle('web app')}
                 className='px-[18px] py-2 cursor-pointer md:px-2 md:py-1.5 bg-primary/30 dark:bg-primaryDark/20 hover:bg-primary/40 dark:hover:bg-primaryDark/10'
               >
-                VANILLA
+                WEB APP'S
               </div>
               )
             : (
@@ -55,37 +76,16 @@ function Projects ({ openModal, setOpenModal }) {
                 onClick={() => setToggle('web app')}
                 className='px-[18px] py-2 cursor-pointer  md:rounded md:px-2 md:py-1.5 active:bg-primary/20 dark:active:bg-primaryDark/20 hover:bg-primary/30 dark:hover:bg-primaryDark/10'
               >
-                VANILLA
-              </div>
-              )}
-          <div className='w-[1.5px] bg-primary dark:bg-primaryDark' />
-          {toggle === 'android app'
-            ? (
-              <div
-                active='true'
-                value='android app'
-                onClick={() => setToggle('android app')}
-                className='px-[18px] py-2 cursor-pointer md:px-2 md:py-1.5 bg-primary/30 dark:bg-primaryDark/20 hover:bg-primary/40 dark:hover:bg-primaryDark/10'
-              >
-                WEB APP'S
-              </div>
-              )
-            : (
-              <div
-                value='android app'
-                onClick={() => setToggle('android app')}
-                className='px-[18px] py-2 cursor-pointer  md:rounded md:px-2 md:py-1.5 active:bg-primary/20 dark:active:bg-primaryDark/20 hover:bg-primary/30 dark:hover:bg-primaryDark/10'
-              >
                 WEB APP'S
               </div>
               )}
           <div className='w-[1.5px] bg-primary dark:bg-primaryDark' />
-          {toggle === 'machine learning'
+          {toggle === 'mobile app'
             ? (
               <div
                 active='true'
-                value='machine learning'
-                onClick={() => setToggle('machine learning')}
+                value='mobile app'
+                onClick={() => setToggle('mobile app')}
                 className='px-[18px] py-2 rounded-r-lg cursor-pointer md:px-2 md:py-1.5 bg-primary/30 dark:bg-primaryDark/20 hover:bg-primary/40 dark:hover:bg-primaryDark/10'
               >
                 MOBILE APP'S
@@ -93,8 +93,8 @@ function Projects ({ openModal, setOpenModal }) {
               )
             : (
               <div
-                value='machine learning'
-                onClick={() => setToggle('machine learning')}
+                value='mobile app'
+                onClick={() => setToggle('mobile app')}
                 className='px-[18px] py-2 rounded-r-lg cursor-pointer  md:rounded md:px-2 md:py-1.5 active:bg-primary/20 dark:active:bg-primaryDark/20 hover:bg-primary/30 dark:hover:bg-primaryDark/10'
               >
                 MOBILE APP'S
