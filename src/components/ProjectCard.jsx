@@ -1,4 +1,4 @@
-function ProjectCard ({ project, setOpenModal }) {
+function ProjectCard({ project, setOpenModal }) {
   return (
     <div
       onClick={() => setOpenModal({ state: true, project })}
@@ -7,11 +7,14 @@ function ProjectCard ({ project, setOpenModal }) {
       <img
         src={project.image}
         alt='project'
-        className='w-full h-[180px] bg-dark dark:bg-light shadow-[0_0_16px_2px_rgba(0,0,0,0.3)] rounded-[10px]'
+        className='w-full object-cover h-[180px] bg-dark dark:bg-light shadow-[0_0_16px_2px_rgba(0,0,0,0.3)] rounded-[10px]'
       />
       <div className='w-full flex items-center flex-wrap gap-2 mt-1'>
         {project.tags?.map((tag, index) => (
-          <span className='text-xs font-normal px-2 py-0.5 rounded-[10px] bg-primary/[0.08] dark:bg-primaryDark/[0.08] text-primary dark:text-primaryDark' key={index}>
+          <span
+            className='text-xs font-normal px-2 py-0.5 rounded-[10px] bg-primary/[0.08] dark:bg-primaryDark/[0.08] text-primary dark:text-primaryDark'
+            key={index}
+          >
             {tag}
           </span>
         ))}
