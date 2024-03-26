@@ -176,6 +176,40 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
+    img: 'https://scontent.fccs3-1.fna.fbcdn.net/v/t39.30808-6/404321792_677041311076517_2909636461664874178_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=i4x7DVCRDvoAX9MYXR3&_nc_ht=scontent.fccs3-1.fna&oh=00_AfBM3FYzL10vKujfBEEbd2itGYqIQdrjBH-0zOWXlgbMLw&oe=6607AAE9',
+    role: 'Frontend Developer',
+    company: 'LatamEarth',
+    date: 'Dec 2023 - Present',
+    desc: 'The system integrates multiple libraries with React.js and uses Next.js for improved productivity and code quality. It handles user registration forms, manages files and databases for administrative purposes, and displays data in tables. It also manages multiple APIs, has error control, and provides scalable and understandable code. The UX design enhances user interaction with the system.',
+    skills: [
+      'Typescript',
+      'React.js',
+      'Next.js',
+      'Prisma',
+      'TailwindCSS',
+      'Supabase'
+    ]
+  },
+  {
+    id: 1,
+    img: 'https://ogrosgameshop.com/wp-content/uploads/elementor/thumbs/LOGO-OGROS-RENOVADO-02-qe7paie0f51bnbgsy7rulozivtoi16b1bme85hvzvk.png',
+    role: 'Frontend Developer',
+    company: 'OgrosGameShop',
+    date: 'Oct 2022 - Jan 2023',
+    desc: 'Web page style design, Uniform style after install plugins, iFrame setup Manage files and database for administrative purpose',
+    skills: ['PHP', 'JQuery', 'Wordpress', 'MySQL', 'Shopify']
+  },
+  {
+    id: 2,
+    img: 'https://media.licdn.com/dms/image/C4E16AQE44HX62Wp92A/profile-displaybackgroundimage-shrink_200_800/0/1591375854443?e=2147483647&v=beta&t=YI8yOaLbJQI7yPhKlhEjMMG-JDQ6geM9-MapfKwKDe4',
+    role: 'FullStack Developer',
+    company: 'TTDE SA',
+    date: 'Apr 2020 - Jan 2022',
+    desc: 'Improving an entertainment web software focused on ticket sales and event management. Integrated payment gateway, manipulated multiple SVGs for interactivity and responsiveness, built a ticket office system, automated invoices and sales reports, integrated multiple third-party APIs, and resolved issues.',
+    skills: ['React', 'CakePHP', 'MySQL']
+  },
+  {
+    id: 3,
     img: 'https://assets-global.website-files.com/5f33d1a6f0dd1334c5ec9264/603479744644302c7c9eaa78_freelance%20coder-p-1080.jpeg',
     role: 'Freelance And Personal Projects',
     company: '@',
@@ -183,25 +217,16 @@ export const experiences = [
     desc: 'Build e-commerce website. Profile. Creation of a Web application. Handle scraped data. Third party integrations..',
     skills: [
       'Redux',
-      'Firebase',
+      'Supabase',
       'AWS',
-      'EC2',
-      'React JS',
-      'Express',
       'JavaScript',
       'TypeScript',
-      'Node JS',
-      'Next JS'
+      'React.js',
+      'Next.js',
+      'Node.js',
+      'Express.js',
+      'Nest.js'
     ]
-  },
-  {
-    id: 1,
-    img: 'https://scontent.fccs3-1.fna.fbcdn.net/v/t39.30808-6/239918371_495699604836284_8987532566029274531_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=tsMVZSK4Uz8AX-v1fGM&_nc_ht=scontent.fccs3-1.fna&oh=00_AfDdSCIFdi40gJiXubzL1KSWkdHy1N2HjtD8d0n4vX42vw&oe=65175A80',
-    role: 'Web Administrator',
-    company: 'Ogros GameShop',
-    date: 'Apr 2020 - Jan 2022',
-    desc: 'Web page style design, Uniform style after install plugins, iFrame setup Manage files and database for administrative purpose',
-    skills: ['Firebase', 'JavaScript', 'Wordpress']
   }
 ]
 
@@ -217,7 +242,7 @@ export const education = [
   },
   {
     id: 1,
-    img: 'https://scontent.fccs3-2.fna.fbcdn.net/v/t39.30808-6/292166325_438353974963789_4064170299973695288_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=rGLH0zkZoawAX_G0KRA&_nc_ht=scontent.fccs3-2.fna&oh=00_AfDuc49MDLkWcPlLyNeMJDJ5BTqTYEy6HE8QdwWD9Yt1XQ&oe=6515E5A2',
+    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Logo_UDO.svg/1200px-Logo_UDO.svg.png',
     school: 'Universidad De Oriente',
     date: '2017 - Paused',
     grade: '7 Semester',
